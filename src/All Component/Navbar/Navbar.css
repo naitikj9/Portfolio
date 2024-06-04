@@ -4,7 +4,8 @@
     padding: 10px;
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -13,8 +14,9 @@
 .nav-list {
     list-style-type: none;
     margin: 0;
-    padding: 5px;
+    padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .nav-item {
@@ -23,6 +25,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s;
 }
 
 .nav-item > svg {
@@ -43,4 +46,58 @@
 
 .nav-item:hover::after {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-item > svg {
+        margin: 0 0 0 10px;
+    }
+
+    .nav-item::after {
+        left: auto;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-list {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .nav-item {
+        padding: 10px 15px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-item > svg {
+        margin: 0 0 0 10px;
+    }
+
+    .nav-item::after {
+        left: auto;
+        right: 10px;
+    }
 }

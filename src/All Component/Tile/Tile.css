@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(33.333% - 40px);
+    width: calc(33.333% - 40px); /* Three tiles with margin */
   }
   
   .tile:hover {
@@ -82,24 +82,3 @@
   .tile.right {
     text-align: right;
   }
-  
-  @media (max-width: 768px) {
-    .tiles-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .tile {
-      width: calc(100% - 40px);
-      margin: 10px;
-    }
-    .tile h2 {
-      font-size: 20px;
-    }
-    .tile h3 {
-      font-size: 16px;
-    }
-    .text {
-      font-size: 14px;
-    }
-  }
-  

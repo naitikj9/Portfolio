@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
 const TypewriterComponent = () => (
   <Typewriter
     options={{
-      strings: ['Student', 'Software Developer', 'Open Source Contributor'],
+      strings: ['Student', 'Software Developer', 'Open Source Contributor' , 'FreeLancer'],
       autoStart: true,
       loop: true,
       typingSpeed: 75,
@@ -20,6 +20,36 @@ const TypewriterComponent = () => (
   />
 );
 
+
+
+// Main Component
+const Component = () => {
+  return (
+    <Container>
+      <LeftSection>
+        <Greet>Hi, there I'm<br /></Greet>
+        <Name>Naitik Jain</Name>
+        <Subtitle>
+          <TypewriterComponent />
+        </Subtitle>
+      </LeftSection>
+      <RightSection>
+        <ProfileImage src={profileImage} alt="Profile" />
+        <IconWrapper>
+          <Icon href="https://linkedin.com/in/naitik-jain-26a577213" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </Icon>
+          <Icon href="https://github.com/naitikj9" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </Icon>
+          <Icon href="mailto:naitikjain921@gmail.com" target="_blank">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </Icon>
+        </IconWrapper>
+      </RightSection>
+    </Container>
+  );
+};
 // Styled-components
 const Container = styled.div`
   display: flex;
@@ -99,34 +129,5 @@ const Greet = styled.h1`
   margin: 0;
   color: #03dac6;
 `;
-
-// Main Component
-const Component = () => {
-  return (
-    <Container>
-      <LeftSection>
-        <Greet>Hi, there I'm<br /></Greet>
-        <Name>Naitik Jain</Name>
-        <Subtitle>
-          <TypewriterComponent />
-        </Subtitle>
-      </LeftSection>
-      <RightSection>
-        <ProfileImage src={profileImage} alt="Profile" />
-        <IconWrapper>
-          <Icon href="https://www.linkedin.com/in/naitik-jain-26a577213" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </Icon>
-          <Icon href="https://github.com/naitikj9" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-          </Icon>
-          <Icon href="mailto:naitikjain921@gmail.com" target="_blank">
-            <FontAwesomeIcon icon={faEnvelope} />
-          </Icon>
-        </IconWrapper>
-      </RightSection>
-    </Container>
-  );
-};
 
 export default Component;
