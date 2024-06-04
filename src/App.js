@@ -8,15 +8,15 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import Footer from './All Component/Footer/Footer.js';
 
 function App() {
-  const [progress, setProgress] = useState(0);
+  // const [progress, setProgress] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress(prevProgress => (prevProgress < 100 ? prevProgress + 10 : 100));
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setProgress(prevProgress => (prevProgress < 100 ? prevProgress + 10 : 100));
+  //   }, 1000);
 
-    return () => clearInterval(interval); 
-  }, []);
+  //   return () => clearInterval(interval); 
+  // }, []);
 
   return (
     <div className="App">
