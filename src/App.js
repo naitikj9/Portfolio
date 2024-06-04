@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AboutMePage from './All Component/About/AboutMe.js';
 import './App.css';
 import Component from './All Component/Component/Component.js';
-import Navbar from './All Component/Navbar/navbar.js';
+import Navbar from './All Component/Navbar/Navbar.js';
 import Tile from './All Component/Tile/Tile.js';
 import { BrowserRouter as Router} from 'react-router-dom';
 import Footer from './All Component/Footer/Footer.js';
