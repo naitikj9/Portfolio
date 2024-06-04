@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import AboutMePage from './All Component/About/AboutMe.js';
 import './App.css';
 import Component from './All Component/Component/Component.js';
