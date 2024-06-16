@@ -55,7 +55,7 @@ function App() {
           position={"right"}
           />
         </div>
-        <h1 className='skill'>Projects</h1>
+        <h1 className='Projects'>Projects</h1>
         <div className="tiles-container">
           <Tile
             header="Tic Tac Toe"
