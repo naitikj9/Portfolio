@@ -5,10 +5,6 @@ import { faHome, faInfoCircle, faProjectDiagram, faFileAlt } from '@fortawesome/
 import { Link } from 'react-scroll';
 
 function Navbar() {
-  const handleResumeClick = () => {
-    window.open('https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1', '_blank');
-  };
-
   return (
     <nav className="nav">
       <ul className="nav-list">
@@ -28,9 +24,9 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item">
-          <a href="#" onClick={handleResumeClick}>
+          <Link to="resume" smooth={true} duration={500}>
             <FontAwesomeIcon icon={faFileAlt} /> Resume
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
