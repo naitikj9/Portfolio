@@ -14,7 +14,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="Projects" smooth={true} duration={500}>
+          <Link to="Project" smooth={true} duration={500}>
             <FontAwesomeIcon icon={faProjectDiagram} /> Projects
           </Link>
         </li>
