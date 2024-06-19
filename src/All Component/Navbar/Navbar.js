@@ -5,6 +5,12 @@ import { faHome, faInfoCircle, faProjectDiagram, faFileAlt } from '@fortawesome/
 import { Link } from 'react-scroll';
 
 function Navbar() {
+  const resumeUrl = "https://drive.google.com/drive/home";
+
+  const openResume = () => {
+    window.open(resumeUrl, "_blank");
+  };
+
   return (
     <nav className="nav">
       <ul className="nav-list">
@@ -24,9 +30,9 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="resume" smooth={true} duration={500}>
+          <a href={resumeUrl} onClick={openResume} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFileAlt} /> Resume
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
